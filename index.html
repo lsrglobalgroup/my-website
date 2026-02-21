@@ -1,215 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: white;
-    padding: 15px 0;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #00adb5;
-}
-
-.hero {
-    background: linear-gradient(to right, #00adb5, #007b83);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.services {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    width: 30%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-}
-
-.about {
-    background: #f9f9f9;
-}
-
-.contact form {
-    max-width: 500px;
-    margin: auto;
-}
-
-.contact input, 
-.contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.contact button {
-    padding: 10px 20px;
-    border: none;
-    background: #00adb5;
-    color: white;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background: #007b83;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-@media(max-width: 768px) {
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSR Global Group</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { line-height: 1.6; }
+        header { background: #0b3d91; color: white; padding: 15px 0; position: sticky; top: 0; }
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .hero { background: #123d7a; color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 15px; }
+        section { padding: 60px 20px; }
+        h2 { text-align: center; margin-bottom: 30px; color: #0b3d91; }
+        .services, .projects, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .card h3 { margin-bottom: 10px; color: #0b3d91; }
+        .contact { background: #0b3d91; color: white; text-align: center; }
+        footer { background: #222; color: #ccc; text-align: center; padding: 15px; }
+        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #0b3d91; color: white; text-decoration: none; border-radius: 5px; }
+        .btn:hover { background: #092d6b; }
+    </style>
 </head>
-
 <body>
 
 <header>
     <div class="container">
+        <h1 style="text-align:center;">LSR Global Group</h1>
         <nav>
-            <h2>MyWebsite</h2>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#investors">Investors</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<section class="hero" id="home">
+<section class="hero">
+    <h1>Global Vision. Diversified Excellence.</h1>
+    <p>Trading • Construction • IT Solutions • Exports • Finance</p>
+</section>
+
+<section id="about">
     <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>Your success starts here</p>
+        <h2>About Us</h2>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            LSR Global Group is a diversified international company delivering excellence across Trading, Construction, IT Solutions, Exports, and Financial Services. We are committed to innovation, integrity, and sustainable growth across global markets.
+        </p>
     </div>
 </section>
 
-<section class="section" id="services">
+<section id="services">
     <div class="container">
         <h2>Our Services</h2>
         <div class="services">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Beautiful and modern website designs.</p>
-            </div>
-            <div class="card">
-                <h3>Development</h3>
-                <p>Fast and secure website development.</p>
-            </div>
-            <div class="card">
-                <h3>SEO</h3>
-                <p>Improve your search engine rankings.</p>
-            </div>
+            <div class="card"><h3>Global Trading</h3><p>Import and export of quality products worldwide with reliable supply chain solutions.</p></div>
+            <div class="card"><h3>Construction</h3><p>Residential, commercial, and infrastructure development with engineering excellence.</p></div>
+            <div class="card"><h3>IT Solutions</h3><p>Software development, digital transformation, and technology consulting services.</p></div>
+            <div class="card"><h3>Exports</h3><p>Efficient global export services ensuring compliance and timely delivery.</p></div>
+            <div class="card"><h3>Finance</h3><p>Investment planning, financial advisory, and strategic funding solutions.</p></div>
         </div>
     </div>
 </section>
 
-<section class="section about" id="about">
+<section id="projects">
     <div class="container">
-        <h2>About Us</h2>
-        <p>We are a creative team delivering high-quality websites for businesses worldwide.</p>
+        <h2>Our Projects</h2>
+        <div class="projects">
+            <div class="card"><h3>Infrastructure Development</h3></div>
+            <div class="card"><h3>International Trade Expansion</h3></div>
+            <div class="card"><h3>Enterprise IT Transformation</h3></div>
+        </div>
     </div>
 </section>
 
-<section class="section contact" id="contact">
+<section id="careers">
     <div class="container">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <h2>Careers</h2>
+        <p style="text-align:center;">Join LSR Global Group and build your future with innovation and leadership.</p>
+        <div style="text-align:center;"><a href="#contact" class="btn">Apply Now</a></div>
+    </div>
+</section>
+
+<section id="investors">
+    <div class="container">
+        <h2>Investor Relations</h2>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            We welcome strategic investors and partners interested in long-term growth across diversified industries.
+        </p>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="card">Project Image 1</div>
+            <div class="card">Project Image 2</div>
+            <div class="card">Project Image 3</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 style="color:white;">Contact Us</h2>
+        <p>Email: lsrglobalgroup@gmail.com</p>
+        <p>Phone: +91 9849435878</p>
+        <p>Registered Address: Cherukumilli Village, Akividu Mandal, West Godavari District, Andhra Pradesh, India.</p>
+        <p>Working Hours: Monday – Saturday | 9:00 AM – 6:00 PM</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 MyWebsite | All Rights Reserved</p>
+    <p>© 2026 LSR Global Group. All Rights Reserved.</p>
 </footer>
 
 </body>
